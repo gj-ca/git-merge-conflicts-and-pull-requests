@@ -1,11 +1,37 @@
-# CSS SASS and Responsive Design Lessons
+# Checking Out
 
-Code in master is the starting point for the SASS lesson.
+Lets work on our first feature!
 
-[Slides for the SASS lesson](https://docs.google.com/presentation/d/196j7enpmF7ueHbtb-4Z0c53nkXeTY9iVevWzZLV6gaE/edit?usp=sharing)
+First thing we do is to create a feature branch.
 
-Code in css-sass-complete branch is the starting point for the responsive design lesson.
+But what branch are we on now?
 
-[Slides for the Responsive Design lesson](https://docs.google.com/presentation/d/1X2mR5oG8AkIjnfXWpTXn0WYSPk9mG5aw_M9AwFd1jLQ/edit?usp=sharing)
+```bash
+$ git branch 
+  # * master
+```
 
-[Wireframes for the example project are found here](https://drive.google.com/file/d/1Afl3NHOiXw3H-QsXFCUjKDDkM2By-ooN/view?usp=sharing)
+```bash
+```
+
+The asterisk tells us what branch we are on, if we had more branches they would be listed on new lines.
+
+Now we can create that new branch.
+
+```bash
+$ git checkout -b new_branch
+```
+
+This command will move (checkout) to a new branch (-b) called new_branch which is a copy of the current branch we were working on.
+
+We can confirm this by looking at our branches
+
+``` bash 
+$ git branch
+  # master
+  # * new_branch
+```
+
+Right, now we can make some changes. We must always be working on a new branch when we make changes to our code.
+
+First change is to 
