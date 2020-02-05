@@ -62,6 +62,6 @@ Great, now if we go to our [repository](https://github.com/gj-ca/git-merge-confl
 
 A pull request is a request to merge two branches together, in this case the new_branch we created with the master branch. We can create a pull request by clicking the link to pull requests in the repository.
 
-![pull-requests]()
+![pull-requests](./docs/pull-requests.png)
 
 
