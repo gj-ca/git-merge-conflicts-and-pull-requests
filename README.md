@@ -64,4 +64,10 @@ A pull request is a request to merge two branches together, in this case the new
 
 ![pull-requests](./docs/pull-requests.png)
 
+From there, we can click the green button to create a pull request. Then change the comparison branch to new_branch.
+
+![comparing-branches](./docs/compare.png)
+
+
+
 
