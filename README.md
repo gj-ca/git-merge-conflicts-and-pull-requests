@@ -69,5 +69,56 @@ From there, we can click the green button to create a pull request. Then change 
 ![comparing-branches](./docs/compare.png)
 
 
+This page shows us all insertions, deletions and any changes that we have made to our code that we want to merge. We can see that next to our branch name (in the red box) that there is a big green tick that says we are able to merge; so far so good now lets click the button below to create pull request.
+
+On the right hand side of the page there is now a list of all collaborators who are able to review our code, right now there isn't much to review but lets select some choice individuals to review our changes before merging. They'll receive an email to review.
+
+
+## If presenting this to the class as an exercise, the first merge will as instructor will work but subsequent student merges will fail.
+
+## Reviewing & Merging
+
+Now it's time to review someone's code. Generally, we review to ensure our collaborators are following style guides, aren't writing dodgy code and definitely aren't inserting a backdoor into our application for later.
+
+We can see that everything looks good so lets merge it in. I'm going to merge first, that works (students to refresh the page).
+
+
+## Merge Conflicts 
+
+Now when you try, you should have some difficulty finding the big green button. Thats because there have now been changes made by another collaborator that are not allowing git to automatically merge our changes straight away. We can fix this one of two ways, either in the browser or in our code editor. For simple changes like this we can use the browser but lets see what it looks like on the code editor.
+
+The person who owns this pull request will be the one who fixes their merge conflict, to do this we need to go back to our terminal and into the branch that we are merging.
+
+```bash
+$ git branch
+  #   master
+  # * new_branch
+```
+
+So if the problem is that other collaborators new changes on the master branch is conflicting with some of our work we need to get those changes into our current branch. How are we going to get those changes? By pulling them down from the master branch!
+
+```bash
+$ git pull origin master
+```
+
+As a good habit, we should always be pulling down from master before we push to avoid conflicts. As an example, what if it took us 6 hours to make these changes or we were doing some very complicated work that took long enough for other collaborators work to be merged into master before ours was and now there is code that is conflicting? 
+
+It's our responsibility to resolve these issues before they become a problem for anyone else.
+
+Now that our pull down has finished we can see some interesting things. 
+
+![conflict](./docs/conflict.png)
+
+
+We can see CONFLICT. 
+
+
+
+
+
+
+
+
+
 
 
